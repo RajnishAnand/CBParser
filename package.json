@@ -1,16 +1,18 @@
 {
   "name": "cbparser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple code block parser for extracting multiple codeblocks from text.",
-  "main": "lib/index.js", 
+  "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "files": ["lib/**/*"],
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
     "test": "jest --config jestconfig.json",
-    "build": "tsc", 
-    "prepare" : "npm run build",
-    "prepublishOnly" : "npm test",
-    "postversion" : "git push --tags"
+    "build": "tsc",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test",
+    "postversion": "git push --tags"
   },
   "repository": {
     "type": "git",
