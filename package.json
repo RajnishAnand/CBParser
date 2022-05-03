@@ -1,0 +1,37 @@
+{
+  "name": "cbparser",
+  "version": "1.0.0",
+  "description": "A simple code block parser for extracting multiple codeblocks from text.",
+  "main": "dist/index.js", 
+  "types": "lib/index.d.ts",
+  "files": ["lib/**/*"],
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc", 
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm test",
+    "postversion" : "git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RajnishAnand/CBParser.git"
+  },
+  "keywords": [
+    "discord",
+    "code",
+    "block",
+    "parser"
+  ],
+  "author": "Rajnish Anand",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RajnishAnand/CBParser/issues"
+  },
+  "homepage": "https://github.com/RajnishAnand/CBParser#readme",
+  "devDependencies": {
+    "@types/jest": "^27.5.0",
+    "jest": "^28.0.3",
+    "ts-jest": "^28.0.0",
+    "typescript": "^4.6.4"
+  }
+}
