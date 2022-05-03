@@ -6,5 +6,5 @@ export function CBParser (str:string):CBParserType{
 
 type CBParserType = {
   lang: string|undefined;
-  code: string|undefined;
+  code: string;
 }[]
