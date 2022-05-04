@@ -1,6 +1,6 @@
 {
   "name": "cbparser",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple code block parser for extracting multiple codeblocks from text.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
