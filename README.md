@@ -4,7 +4,7 @@
 ![npm version](https://img.shields.io/npm/v/cbparser.svg?maxAge=3600)
 ![npm downloads](https://img.shields.io/npm/dt/cbparser.svg?maxAge=3600)
 ---
-## 🤍 About 
+## About 
 CBParser or Code Block parser is a parser to extract multiple code blocks from text, Specially Discord Code blocks.
 
 - Completely Written in Typescript 🌟
@@ -12,33 +12,49 @@ CBParser or Code Block parser is a parser to extract multiple code blocks from t
 - Very Small in Size 🍫
 - Easy to use 🍭
 
-## 🗜️ Installation 
+## Installation 
+Using npm:
 ```sh-session
 npm install cbparser
 ```
+using yarn:
 ```sh-session
 yarn add cbparser
 ```
+using pnpm:
 ```sh-session
 pnpm add cbparser
 ```
-## 🧰 Example 
-Code :
+
+## Importing
+```js
+const {CBParser} = require ('cbparser');
+```
+or using import :
+```js
+import {CBParser} from 'cbparser';
+```
+
+## Documentation
+Takes `@param str - string` as an argument.
+
+returns array of code & lang matched in the text.
+`Array<[Object]>`
+- `lang ?: string`
+- `code : string`
+
+## Example 
+code:
 ```js
 const {CBParser} = require ('cbparser');
 
 const code = "```js\nconsole.log('Hello Void!')```"
 console.log(CBParser(code));
 ```
-Output : 
-![output](https://media.discordapp.net/attachments/906985861525155880/971080712558092288/IMG_20220503_213729.jpg)
-
-## 🍜 Return type 
-returns array of code & lang matched in the text.
-`Array<[Object]>`
-- `lang ?: string`
-- `code : string`
-
+output:
+```js
+[{lang:"js", code: "console.log('Hello Void!')"}]
+```
 ---
 Check out [Regex](https://regexr.com/6krj0) being used to parse code blocks.
 
