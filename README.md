@@ -36,12 +36,13 @@ import {CBParser} from 'cbparser';
 ```
 
 ## Documentation
-Takes `@param str - string` as an argument.
+Parameter:
+- `str` : string 
 
-returns array of code & lang matched in the text.
-`Array<[Object]>`
-- `lang ?: string`
-- `code : string`
+returns:
+-`Array<[Object]>`
+  - `lang` ?: string
+  - `code` : string
 
 ## Example 
 code:
