@@ -38,10 +38,10 @@ import {CBParser} from 'cbparser';
 ```
 
 ## Documentation:
-**Parameter**:
+**Parameter:**
 - `str` : string 
 
-**returns**:
+**returns:**
 - `Array<[Object]>`
   - `lang` ?: string
   - `code` : string
