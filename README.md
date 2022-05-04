@@ -12,6 +12,8 @@ CBParser or Code Block parser is a parser to extract multiple code blocks from t
 - Very Small in Size 🍫
 - Easy to use 🍭
 
+> `node ^v12` required.
+
 ## Installation 
 Using npm:
 ```sh-session
@@ -35,16 +37,16 @@ or using import :
 import {CBParser} from 'cbparser';
 ```
 
-## Documentation
-Parameter:
+## Documentation:
+**Parameter**:
 - `str` : string 
 
-returns:
--`Array<[Object]>`
+**returns**:
+- `Array<[Object]>`
   - `lang` ?: string
   - `code` : string
 
-## Example 
+## Example:
 code:
 ```js
 const {CBParser} = require ('cbparser');
